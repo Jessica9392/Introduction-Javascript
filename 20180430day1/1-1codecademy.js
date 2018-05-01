@@ -62,5 +62,4 @@ Four built-in mathematical operators include +, -, *, and /.
 JavaScript associates certain properties with different data types.
 JavaScript has built-in methods for different data types.
 Libraries are collections of methods that can be called without an instance.
-You can write single-line comments with // and multi-line comments between /* and */.
-*/
+You can write single-line comments with // and multi-line comments between /* and */
