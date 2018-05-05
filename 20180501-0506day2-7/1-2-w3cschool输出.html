@@ -6,10 +6,19 @@
 
 <p id="demo">我的第一个段落</p>
 
+<button onclick="myFunction()">点我</button>
+
 <script>
 window.alert(5+6);
 document.getElementById("demo").innerHTML = "段落已修改。";
 document.write(Date());
+function myFunction() {
+    document.write(Date());
+}
+a=5;
+b=6;
+c=a+b;
+console.log(c);    //console.log()方法让你看到你在页面中的输出内容，使更容易调试JavaScript；与alert相比，console不会打断页面操作。
 </script>
 
 </body>

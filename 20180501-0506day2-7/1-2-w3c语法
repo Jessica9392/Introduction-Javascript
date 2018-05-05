@@ -1,0 +1,95 @@
+///JavaScript字面量（一个恒定的值）
+//Number可以是整数或小数或科学计数（e）
+3.14
+123e5
+//String用单引号或双引号
+'Ray'
+"Ray"
+//表达式用于计算
+5+6
+5*6
+//Array定义一个数组
+[40,100,1,5,25,10]  //其实逗号后面需不需要空格？？
+//Object定义一个对象
+{firstName:"Jay",
+lastName:"Doe", age:50,
+eyeColor:"blue"}
+//Function定义一个函数
+function myFunction(a, b) {return a * b;}
+
+///JavaScript变量，使用关键字var定义变量（是一个名称），最好以字母开头，对大小写敏感
+var x, length;
+x=5;
+length=6;
+//或者声明的同时赋值,可以用逗号分隔，也可以跨行声明
+var x=5,length=6;
+//var lastName="Doe",
+age=30;
+job="carpenter";
+//未赋值的声明的变量，其值为undefined。
+//如果重新声明JS变量，该变量值不会丢失，如下例变量carname依然是“Volvo”
+var carname="Volvo";
+var carname;
+
+
+//最好在代码开始处，统一对需要的变量进行声明。
+
+///JavaScript操作符
+//算术运算符-计算值
+(5+6)*10
+//赋值运算符-赋值
+x=5;
+y=6;
+z=(x+y)*10;
+//赋值、算术、位运算符 & 条件、比较、逻辑运算符（== != < >）
+
+///JavaScript语句
+//语句用分号分隔
+x=5+6;
+y=x*10;
+//JS会忽略多余的空格，可以加空格来提高可读性
+//可以在*文本字符串*中使用反斜杠对代码行进行换行。
+document.write("Hello\PP");
+
+///JavaScript关键词
+//JavaScript语句以关键词为开头。例如Var告诉浏览器创建一个新的变量。
+
+///JavaScript标识符
+/*标识符必须以字母、下划线或美元符（$）开始。后续字符多一种-数字。
+保留字有：abstract\
+boolean\break跳出循环\byte\
+case\catch语句块，在try语句块执行出错时执行\char\class\const\continue跳过循环中的一个迭代（不懂）\
+debugger\default\delete\do（+while 执行一个语句块，在条件语句为true时继续执行该语句块\double\
+（if+ ~ 用于给予不同条件来执行不同的动作）else\enum\\export\extends\
+false\final\finally\float\for在条件语句为true时，将代码块执行指定的次数\function\
+goto\if\implements\import\（for+ ~ 用于遍历数组或者对象的属性，对数组或者对象的属性进行循环操作）in\instanceof\int\interface\
+let\long\native\new\null\package\private\protected\public\return退出函数\
+short\static\super\switch用于基于不同条件来执行不同动作\synchronized\
+this\throw抛出（生成）错误\throws\transient\true\try实现错误处理，与catch一起使用\typeof\
+var\void\volatile\while当条件语句为true时执行语句块\with
+
+///JavaScript注释
+//注释可以用来阻止执行，例子用于阻止其中一条代码行的执行（可用于调试）,"/*"、"*/"适用于代码块
+<script>
+//document.getElementbyID("myH1").innerHTML="欢迎来到XXX";
+document.getElementById("myP").innerHTML="The next paragraph to be tested.";
+</script>
+
+///JavaScript数据类型
+//如未使用数据类型，实例如16+"volvo" 将无法执行。虽然会输出结果“16volvo”
+
+///JavaScript函数
+//JS语句可以写在函数内，函数可以重复引用（调用）
+function myFunction(a,b){return a*b//返回a和b的乘积
+} 
+
+///JavaScript对大小写敏感
+/*getElementById VS getElementbyID 
+myVariable VS MyVariable
+*/
+
+///JavaScript字符集
+JS使用Unicode字符集
+
+/*驼峰法的命名规则，如lastName
+JS是脚本语言。浏览器会在读取代码时，逐行地执行脚本代码。传统编程则会在执行前对所有代码进行编译。

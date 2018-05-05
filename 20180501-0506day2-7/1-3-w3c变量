@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Second part for the third day</title>
+</head>
+<body>
+
+<p>点击这里创建变量，并显示结果。</p>
+<button onclick="myFunction()">点击这里</button>
+<p id="demo"></p>
+
+<p>假设y=5，计算x=y+2，并显示结果。</p>
+<button onclick="nextfunction()">点击这里计算</button>
+<p id="demo1"></p>
+
+    <script>
+    //变量有很多种数据类型，现在只看数字和字符串。文本值用双引号或单引号（什么时候用单引号？）数值不要用引号，否则被当做文本来处理
+        var pi=3.14;
+        var name="Penny";
+        var answer="Yes";
+        document.write(pi+"<br>");
+        document.write(name+"<br>");
+        document.write(answer+"<br>");
+    //创建名为carname的变量，并向其赋值“Volvo”，然后把它放入id=“demo”的HTML段落中
+        function myFunction()
+        {
+            var carname="Volvo";
+            document.getElementById("demo").innerHTML=carname;
+        }
+    //通过变量做算数
+        function nextfunction()
+        {
+            var y=5;
+            var x=y+2;
+            var demoP=document.getElementById("demo1")
+            demoP.innerHTML="x=" + x;
+        }
+
+    </script>
+</body>
+</html>
